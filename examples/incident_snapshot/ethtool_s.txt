@@ -1,0 +1,9 @@
+NIC statistics:
+     rx_packets: 98421044
+     tx_packets: 91204110
+     rx_bytes: 74910293812
+     rx_missed_errors: 412
+     rx_no_buffer_count: 89
+     rx_crc_errors: 0
+     rx_dropped: 412
+     tx_dropped: 0

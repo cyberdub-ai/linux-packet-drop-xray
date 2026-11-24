@@ -1,0 +1,2 @@
+qdisc fq_codel 0: dev eth0 root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms
+ Sent 1291023412 bytes 1412901 pkt (dropped 0, overlimits 0 requeues 0)

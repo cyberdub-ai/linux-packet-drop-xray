@@ -1,0 +1,21 @@
+#!/usr/bin/env bpftrace
+/*
+ * Layer 5 eBPF X-Ray: trace exact Linux kernel packet drop reasons (Linux 5.17+).
+ * Usage (read-only, safe in production):
+ *   sudo timeout 15 bpftrace ebpf/kfree_skb_reasons.bt > snapshot/bpftrace_kfree_skb.txt
+ */
+
+BEGIN {
+    printf("Tracing tracepoint:skb:kfree_skb (Ctrl-C to print summary)...\n");
+}
+
+tracepoint:skb:kfree_skb
+/args->reason > 2/
+{
+    @drops[args->reason, ksym(args->location)] = count();
+}
+
+END {
+    print(@drops);
+    clear(@drops);
+}

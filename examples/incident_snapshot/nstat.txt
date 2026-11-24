@@ -1,0 +1,7 @@
+#kernel
+TcpRetransSegs                  1428               0.0
+TcpExtListenOverflows           17                 0.0
+TcpExtListenDrops               17                 0.0
+TcpExtTCPRcvQDrop               64                 0.0
+TcpExtTCPOFODrop                0                  0.0
+IpExtInDiscards                 0                  0.0

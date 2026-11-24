@@ -1,0 +1,4 @@
+Tracing tracepoint:skb:kfree_skb (Ctrl-C to print summary)...
+@drops[SKB_DROP_REASON_SOCKET_RCVBUFF, tcp_v4_rcv]: 64
+@drops[SKB_DROP_REASON_NETFILTER_DROP, nf_hook_slow]: 19
+@drops[SKB_DROP_REASON_NO_SOCKET, __udp4_lib_rcv]: 3

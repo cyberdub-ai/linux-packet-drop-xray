@@ -1,0 +1,3 @@
+qdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 84291023412 bytes 74129011 pkt (dropped 184, overlimits 0 requeues 12)
+ backlog 0b 0p requeues 12
